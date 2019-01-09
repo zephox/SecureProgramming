@@ -27,7 +27,8 @@ class MemoryController: UITableViewController {
             }
         }
     }
-
+}
+extension MemoryController{
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
