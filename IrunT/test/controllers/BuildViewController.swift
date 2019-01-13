@@ -23,5 +23,6 @@ class BuildViewController: UIViewController{
         ramLabele.text = sharedInstance.shared.ram?.name
         gpuLabel.text = sharedInstance.shared.gpu?.name
         psuLabel.text = sharedInstance.shared.psu?.name
+        moboLabel.text = sharedInstance.shared.kast?.name
     }
 }

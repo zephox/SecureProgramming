@@ -16,12 +16,15 @@ class sharedInstance{
     var cpu : CPU?
     var ram : Memory?
     var psu : PSU?
+    var kast : Case?
+    
     
     func saveBuild() {
         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.ram), forKey:"memory")
         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.gpu), forKey:"gpu")
         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.cpu), forKey:"cpu")
         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.psu), forKey:"psu")
+         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.kast), forKey:"case")
     }
     
     func loadBuild(){
@@ -36,6 +39,9 @@ class sharedInstance{
         }
         if let data = UserDefaults.standard.value(forKey:"psu") as? Data {
             sharedInstance.shared.psu = try? PropertyListDecoder().decode(PSU.self, from: data)
+        }
+        if let data = UserDefaults.standard.value(forKey:"case") as? Data {
+            sharedInstance.shared.kast = try? PropertyListDecoder().decode(Case.self, from: data)
         }
     }
     //Initializer access level change now

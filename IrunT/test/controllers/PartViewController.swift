@@ -59,6 +59,10 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
             performSegue(withIdentifier: "gotoMem", sender: self)
         case "Case":
             performSegue(withIdentifier: "gotoCase", sender: self)
+        case "Motherboard":
+            performSegue(withIdentifier: "gotoMobo", sender: self)
+        case "CPU Cooler":
+            performSegue(withIdentifier: "gotoCooler", sender: self)
         default: break
             //
         }
