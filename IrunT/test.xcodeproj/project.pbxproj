@@ -41,6 +41,12 @@
 		F968318621EBE29900F5DC6D /* sharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318521EBE29900F5DC6D /* sharedInstance.swift */; };
 		F968318721EBE29900F5DC6D /* sharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318521EBE29900F5DC6D /* sharedInstance.swift */; };
 		F968318821EBE29900F5DC6D /* sharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318521EBE29900F5DC6D /* sharedInstance.swift */; };
+		F968318A21EBEA9F00F5DC6D /* BuildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318921EBEA9F00F5DC6D /* BuildViewController.swift */; };
+		F968318B21EBEA9F00F5DC6D /* BuildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318921EBEA9F00F5DC6D /* BuildViewController.swift */; };
+		F968318C21EBEA9F00F5DC6D /* BuildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318921EBEA9F00F5DC6D /* BuildViewController.swift */; };
+		F968318E21EBF8DE00F5DC6D /* CPUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318D21EBF8DE00F5DC6D /* CPUController.swift */; };
+		F968318F21EBF8DE00F5DC6D /* CPUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318D21EBF8DE00F5DC6D /* CPUController.swift */; };
+		F968319021EBF8DE00F5DC6D /* CPUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968318D21EBF8DE00F5DC6D /* CPUController.swift */; };
 		F96A8C4921AFE47700146A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C4821AFE47700146A29 /* AppDelegate.swift */; };
 		F96A8C4B21AFE47700146A29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C4A21AFE47700146A29 /* ViewController.swift */; };
 		F96A8C4E21AFE47700146A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96A8C4C21AFE47700146A29 /* Main.storyboard */; };
@@ -94,6 +100,8 @@
 		F968317721EBAB5800F5DC6D /* psumodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psumodel.swift; sourceTree = "<group>"; };
 		F968317B21EBAF0200F5DC6D /* buildmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildmodel.swift; sourceTree = "<group>"; };
 		F968318521EBE29900F5DC6D /* sharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharedInstance.swift; sourceTree = "<group>"; };
+		F968318921EBEA9F00F5DC6D /* BuildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildViewController.swift; sourceTree = "<group>"; };
+		F968318D21EBF8DE00F5DC6D /* CPUController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUController.swift; sourceTree = "<group>"; };
 		F96A8C4521AFE47700146A29 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96A8C4821AFE47700146A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96A8C4A21AFE47700146A29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +260,8 @@
 				F958C6BC21C3FDA000A2B85E /* PSUController.swift */,
 				F958C6BE21C3FDA500A2B85E /* MemoryController.swift */,
 				F958C6BA21C3FC1700A2B85E /* CaseController.swift */,
+				F968318921EBEA9F00F5DC6D /* BuildViewController.swift */,
+				F968318D21EBF8DE00F5DC6D /* CPUController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -519,6 +529,8 @@
 				F968317C21EBAF0200F5DC6D /* buildmodel.swift in Sources */,
 				F937783F21BAB58F00901202 /* partCell.swift in Sources */,
 				F960237F21B15906002D884F /* tvc.swift in Sources */,
+				F968318E21EBF8DE00F5DC6D /* CPUController.swift in Sources */,
+				F968318A21EBEA9F00F5DC6D /* BuildViewController.swift in Sources */,
 				F910E7D821CA44240071C648 /* memoryModel.swift in Sources */,
 				F968317821EBAB5800F5DC6D /* psumodel.swift in Sources */,
 				F96A8C7921AFE54900146A29 /* LoginViewController.swift in Sources */,
@@ -541,6 +553,8 @@
 				F968318721EBE29900F5DC6D /* sharedInstance.swift in Sources */,
 				F968318321EBAFF700F5DC6D /* gpumodel.swift in Sources */,
 				F968317921EBAB5800F5DC6D /* psumodel.swift in Sources */,
+				F968318B21EBEA9F00F5DC6D /* BuildViewController.swift in Sources */,
+				F968318F21EBF8DE00F5DC6D /* CPUController.swift in Sources */,
 				F968317D21EBAF0200F5DC6D /* buildmodel.swift in Sources */,
 				F968317F21EBAFD800F5DC6D /* memoryModel.swift in Sources */,
 				F968318121EBAFDB00F5DC6D /* cpumodel.swift in Sources */,
@@ -555,6 +569,8 @@
 				F968318821EBE29900F5DC6D /* sharedInstance.swift in Sources */,
 				F968318421EBAFF700F5DC6D /* gpumodel.swift in Sources */,
 				F968317A21EBAB5800F5DC6D /* psumodel.swift in Sources */,
+				F968318C21EBEA9F00F5DC6D /* BuildViewController.swift in Sources */,
+				F968319021EBF8DE00F5DC6D /* CPUController.swift in Sources */,
 				F968317E21EBAF0200F5DC6D /* buildmodel.swift in Sources */,
 				F968318021EBAFD900F5DC6D /* memoryModel.swift in Sources */,
 				F968318221EBAFDC00F5DC6D /* cpumodel.swift in Sources */,

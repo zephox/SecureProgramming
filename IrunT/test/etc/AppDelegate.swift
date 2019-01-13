@@ -15,9 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if let data = UserDefaults.standard.value(forKey:"localBuild") as? Data {
-            sharedInstance.shared.localBuild = try? PropertyListDecoder().decode(build.self, from: data)
-        }
+       sharedInstance.shared.loadBuild()
         
         return true
     }

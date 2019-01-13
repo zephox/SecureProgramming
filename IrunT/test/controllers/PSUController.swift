@@ -28,6 +28,20 @@ class PSUController: UITableViewController {
         }
     }
     
+    func showSimpleAlert(_ item: PSU) {
+        let alert = UIAlertController(title: item.name, message:item.series + " " + item.watts + " " + item.price ,preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
+        }))
+        alert.addAction(UIAlertAction(title: "Add to Build",
+                                      style: UIAlertAction.Style.default,
+                                      handler: {(_: UIAlertAction!) in
+                                        sharedInstance.shared.psu = item
+                                        sharedInstance.shared.saveBuild()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -42,5 +56,9 @@ class PSUController: UITableViewController {
         cell.detailTextLabel?.text = cleanedArray[indexPath.row].price
         return cell
         
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showSimpleAlert(cleanedArray[indexPath.row])
     }
 }

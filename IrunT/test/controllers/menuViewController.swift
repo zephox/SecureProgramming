@@ -34,7 +34,7 @@ class menuViewController: UIViewController {
         performSegue(withIdentifier: "toSpecs", sender: self)
     }
     @IBAction func toBuild(_ sender: UIButton) {
-        
+     performSegue(withIdentifier: "toBuild", sender: self)
     }
     
 }

@@ -8,9 +8,9 @@
 
 import Foundation
 
-class build : Codable {
-    public var psu : PSU
-    public var gpu : GPU
-    public var cpu : CPU
-    public var ram : Memory
+struct build : Codable {
+    var psu : PSU
+    var gpu : GPU
+    var cpu : CPU
+    var ram : Memory
 }

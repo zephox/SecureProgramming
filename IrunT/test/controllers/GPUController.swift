@@ -28,6 +28,20 @@ class GPUController: UITableViewController {
         }
     }
     
+    func showSimpleAlert(_ item: GPU) {
+        let alert = UIAlertController(title: item.name, message:item.series + " " + item.name + " " + item.price ,preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
+        }))
+        alert.addAction(UIAlertAction(title: "Add to Build",
+                                      style: UIAlertAction.Style.default,
+                                      handler: {(_: UIAlertAction!) in
+                                        sharedInstance.shared.gpu = item
+                                        sharedInstance.shared.saveBuild()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -41,6 +55,10 @@ class GPUController: UITableViewController {
         cell.textLabel?.text = cleanedArray[indexPath.row].name.split(separator: " ")[0] + " " + cleanedArray[indexPath.row].series + " " + cleanedArray[indexPath.row].chipset
         cell.detailTextLabel?.text = cleanedArray[indexPath.row].price
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showSimpleAlert(cleanedArray[indexPath.row])
         
     }
 }

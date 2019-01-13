@@ -51,6 +51,8 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
         switch titleStrings[indexPath.row] {
         case "GPU":
             performSegue(withIdentifier: "gotoGPU", sender: self)
+        case "CPU":
+            performSegue(withIdentifier: "gotoCPU", sender: self)
         case "PSU":
             performSegue(withIdentifier: "gotoPSU", sender: self)
         case "Memory":
