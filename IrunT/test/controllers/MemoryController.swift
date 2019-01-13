@@ -27,6 +27,18 @@ class MemoryController: UITableViewController {
             }
         }
     }
+    func showSimpleAlert(_ item: Memory) {
+        let alert = UIAlertController(title: item.name, message:item.size + " " + item.speed,preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
+        }))
+        alert.addAction(UIAlertAction(title: "Add to Build",
+                                      style: UIAlertAction.Style.default,
+                                      handler: {(_: UIAlertAction!) in
+                                        sharedInstance.shared.localBuild?.ram = item
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 extension MemoryController{
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -42,6 +54,10 @@ extension MemoryController{
         cell.textLabel?.text = cleanedArray[indexPath.row].name + " " + cleanedArray[indexPath.row].size
         cell.detailTextLabel?.text = cleanedArray[indexPath.row].price
         return cell
+        
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showSimpleAlert(cleanedArray[indexPath.row])
         
     }
 }
