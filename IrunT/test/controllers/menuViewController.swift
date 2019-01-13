@@ -33,6 +33,9 @@ class menuViewController: UIViewController {
     @IBAction func test(_ sender: UIButton) {
         performSegue(withIdentifier: "toSpecs", sender: self)
     }
+    @IBAction func toBuild(_ sender: UIButton) {
+        
+    }
     
 }
 extension UIView{

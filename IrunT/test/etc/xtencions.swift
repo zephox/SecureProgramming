@@ -14,6 +14,7 @@ extension UIColor{
 }
 extension URL{
     static let CPU = "https://zephox.nl/cpu.json"
+    static let PSU = "https://zephox.nl/psu.json"
     static let GPU = "https://zephox.nl/gpu.json"
     static let Memory = "https://zephox.nl/memory.json"
     static let Case = "https://zephox.nl/case.json"

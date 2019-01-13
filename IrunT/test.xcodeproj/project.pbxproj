@@ -20,6 +20,15 @@
 		F958C6BD21C3FDA000A2B85E /* PSUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F958C6BC21C3FDA000A2B85E /* PSUController.swift */; };
 		F958C6BF21C3FDA500A2B85E /* MemoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F958C6BE21C3FDA500A2B85E /* MemoryController.swift */; };
 		F960237F21B15906002D884F /* tvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960237E21B15906002D884F /* tvc.swift */; };
+		F968317121EBA8D500F5DC6D /* Museo500-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F968316F21EBA8D500F5DC6D /* Museo500-Regular.otf */; };
+		F968317221EBA8D500F5DC6D /* Museo500-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F968316F21EBA8D500F5DC6D /* Museo500-Regular.otf */; };
+		F968317321EBA8D500F5DC6D /* Museo500-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F968316F21EBA8D500F5DC6D /* Museo500-Regular.otf */; };
+		F968317421EBA8D500F5DC6D /* Museo700-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F968317021EBA8D500F5DC6D /* Museo700-Regular.otf */; };
+		F968317521EBA8D500F5DC6D /* Museo700-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F968317021EBA8D500F5DC6D /* Museo700-Regular.otf */; };
+		F968317621EBA8D500F5DC6D /* Museo700-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F968317021EBA8D500F5DC6D /* Museo700-Regular.otf */; };
+		F968317821EBAB5800F5DC6D /* psumodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968317721EBAB5800F5DC6D /* psumodel.swift */; };
+		F968317921EBAB5800F5DC6D /* psumodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968317721EBAB5800F5DC6D /* psumodel.swift */; };
+		F968317A21EBAB5800F5DC6D /* psumodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968317721EBAB5800F5DC6D /* psumodel.swift */; };
 		F96A8C4921AFE47700146A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C4821AFE47700146A29 /* AppDelegate.swift */; };
 		F96A8C4B21AFE47700146A29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C4A21AFE47700146A29 /* ViewController.swift */; };
 		F96A8C4E21AFE47700146A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96A8C4C21AFE47700146A29 /* Main.storyboard */; };
@@ -30,8 +39,6 @@
 		F96A8C7921AFE54900146A29 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C7821AFE54900146A29 /* LoginViewController.swift */; };
 		F96A8C7B21AFE63D00146A29 /* GPUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C7A21AFE63D00146A29 /* GPUController.swift */; };
 		F96A8C7D21AFEC2100146A29 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C7C21AFEC2100146A29 /* registerViewController.swift */; };
-		F96A8C8321AFEF1E00146A29 /* Museo500-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F96A8C8221AFEF1E00146A29 /* Museo500-Regular.otf */; };
-		F96A8C8521AFEF2B00146A29 /* Museo700-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F96A8C8421AFEF2B00146A29 /* Museo700-Regular.otf */; };
 		F9B4DAC021B071B000466FBE /* gpumodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4DABF21B071B000466FBE /* gpumodel.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +77,9 @@
 		F958C6BC21C3FDA000A2B85E /* PSUController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUController.swift; sourceTree = "<group>"; };
 		F958C6BE21C3FDA500A2B85E /* MemoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryController.swift; sourceTree = "<group>"; };
 		F960237E21B15906002D884F /* tvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvc.swift; sourceTree = "<group>"; };
+		F968316F21EBA8D500F5DC6D /* Museo500-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo500-Regular.otf"; sourceTree = "<group>"; };
+		F968317021EBA8D500F5DC6D /* Museo700-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo700-Regular.otf"; sourceTree = "<group>"; };
+		F968317721EBAB5800F5DC6D /* psumodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psumodel.swift; sourceTree = "<group>"; };
 		F96A8C4521AFE47700146A29 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96A8C4821AFE47700146A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96A8C4A21AFE47700146A29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +97,6 @@
 		F96A8C7A21AFE63D00146A29 /* GPUController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUController.swift; sourceTree = "<group>"; };
 		F96A8C7C21AFEC2100146A29 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		F96A8C8121AFEF0C00146A29 /* Museo300-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo300-Regular.otf"; sourceTree = "<group>"; };
-		F96A8C8221AFEF1E00146A29 /* Museo500-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Museo500-Regular.otf"; path = "../../../Downloads/Museo 500-Desktop/Fonts/Museo500-Regular.otf"; sourceTree = "<group>"; };
-		F96A8C8421AFEF2B00146A29 /* Museo700-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Museo700-Regular.otf"; path = "../../../Downloads/Museo 700-Desktop/Fonts/Museo700-Regular.otf"; sourceTree = "<group>"; };
 		F9808B2A0ABFD78E9CD39157 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B4DABF21B071B000466FBE /* gpumodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpumodel.swift; sourceTree = "<group>"; };
 		FD93F97A03EDF4FA1FE516AF /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,8 +209,8 @@
 		F96A8C8021AFEF0800146A29 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				F96A8C8421AFEF2B00146A29 /* Museo700-Regular.otf */,
-				F96A8C8221AFEF1E00146A29 /* Museo500-Regular.otf */,
+				F968316F21EBA8D500F5DC6D /* Museo500-Regular.otf */,
+				F968317021EBA8D500F5DC6D /* Museo700-Regular.otf */,
 				F96A8C8121AFEF0C00146A29 /* Museo300-Regular.otf */,
 			);
 			path = Fonts;
@@ -251,6 +259,7 @@
 				F9B4DABF21B071B000466FBE /* gpumodel.swift */,
 				F958C6B821C3F62300A2B85E /* cpumodel.swift */,
 				F910E7D721CA44240071C648 /* memoryModel.swift */,
+				F968317721EBAB5800F5DC6D /* psumodel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -363,10 +372,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F96A8C8521AFEF2B00146A29 /* Museo700-Regular.otf in Resources */,
+				F968317121EBA8D500F5DC6D /* Museo500-Regular.otf in Resources */,
 				F96A8C5321AFE47900146A29 /* LaunchScreen.storyboard in Resources */,
+				F968317421EBA8D500F5DC6D /* Museo700-Regular.otf in Resources */,
 				F96A8C5021AFE47900146A29 /* Assets.xcassets in Resources */,
-				F96A8C8321AFEF1E00146A29 /* Museo500-Regular.otf in Resources */,
 				F96A8C4E21AFE47700146A29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +384,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F968317521EBA8D500F5DC6D /* Museo700-Regular.otf in Resources */,
+				F968317221EBA8D500F5DC6D /* Museo500-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +393,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F968317621EBA8D500F5DC6D /* Museo700-Regular.otf in Resources */,
+				F968317321EBA8D500F5DC6D /* Museo500-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +503,7 @@
 				F937783F21BAB58F00901202 /* partCell.swift in Sources */,
 				F960237F21B15906002D884F /* tvc.swift in Sources */,
 				F910E7D821CA44240071C648 /* memoryModel.swift in Sources */,
+				F968317821EBAB5800F5DC6D /* psumodel.swift in Sources */,
 				F96A8C7921AFE54900146A29 /* LoginViewController.swift in Sources */,
 				F958C6BD21C3FDA000A2B85E /* PSUController.swift in Sources */,
 				F96A8C7B21AFE63D00146A29 /* GPUController.swift in Sources */,
@@ -506,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F968317921EBAB5800F5DC6D /* psumodel.swift in Sources */,
 				F96A8C5E21AFE47900146A29 /* testTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F968317A21EBAB5800F5DC6D /* psumodel.swift in Sources */,
 				F96A8C6921AFE47900146A29 /* testUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
