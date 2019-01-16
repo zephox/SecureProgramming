@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		340DAC49EE348F3089A98DC9 /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CA9D6E17AF1AEDCF11C093 /* Pods_testTests.framework */; };
 		34C1F59EBC6414CF6E6890C4 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9808B2A0ABFD78E9CD39157 /* Pods_test.framework */; };
+		4C11B54D21EF45100084C425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C11B54C21EF45100084C425 /* GoogleService-Info.plist */; };
 		634902FE494759AC90FA64AF /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B568B987A75AE6426058D0B /* Pods_testUITests.framework */; };
 		F910E7D821CA44240071C648 /* memoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910E7D721CA44240071C648 /* memoryModel.swift */; };
 		F924237221B309D90005B379 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F924237121B309D90005B379 /* menuViewController.swift */; };
@@ -87,6 +88,7 @@
 		234EFF4F75049AF41B0827AA /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		2B568B987A75AE6426058D0B /* Pods_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEB81680C4BDC8BDB2A7046 /* Pods-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C11B54C21EF45100084C425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80F1C1B06322310F4535BE4D /* Pods-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF12F297B57E34556F213B4A /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
 		F910E7D721CA44240071C648 /* memoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoryModel.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				F9B4DABE21B0719700466FBE /* Models */,
 				F96A8C5421AFE47900146A29 /* Info.plist */,
+				4C11B54C21EF45100084C425 /* GoogleService-Info.plist */,
 				F96A8C8821AFF30300146A29 /* Views */,
 				F96A8C8721AFF2ED00146A29 /* controllers */,
 				F96A8C8621AFF2D400146A29 /* etc */,
@@ -411,6 +414,7 @@
 				F968317421EBA8D500F5DC6D /* Museo700-Regular.otf in Resources */,
 				F96A8C5021AFE47900146A29 /* Assets.xcassets in Resources */,
 				F96A8C4E21AFE47700146A29 /* Main.storyboard in Resources */,
+				4C11B54D21EF45100084C425 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,12 +449,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -747,13 +757,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QHTA943S8P;
+				DEVELOPMENT_TEAM = PKYC47269K;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = secp.test;
+				PRODUCT_BUNDLE_IDENTIFIER = secp.test.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -766,13 +776,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QHTA943S8P;
+				DEVELOPMENT_TEAM = PKYC47269K;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = secp.test;
+				PRODUCT_BUNDLE_IDENTIFIER = secp.test.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
