@@ -164,7 +164,7 @@
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kir-3b-xUU">
                                 <rect key="frame" x="16" y="80" width="164" height="164"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" translatesAutoresizingMaskIntoConstraints="NO" id="BSf-uy-acd">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game" translatesAutoresizingMaskIntoConstraints="NO" id="BSf-uy-acd">
                                         <rect key="frame" x="32" y="32" width="100" height="100"/>
                                     </imageView>
                                 </subviews>
@@ -180,7 +180,7 @@
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agM-8B-tUb">
                                 <rect key="frame" x="16" y="260" width="164" height="164"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caticon" translatesAutoresizingMaskIntoConstraints="NO" id="Cvb-wO-hIZ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" translatesAutoresizingMaskIntoConstraints="NO" id="Cvb-wO-hIZ">
                                         <rect key="frame" x="32" y="32" width="100" height="100"/>
                                     </imageView>
                                 </subviews>
@@ -196,7 +196,7 @@
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJ0-QZ-T2K">
                                 <rect key="frame" x="195" y="80" width="164" height="164"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caticon" translatesAutoresizingMaskIntoConstraints="NO" id="9ZY-kd-E8l">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pc" translatesAutoresizingMaskIntoConstraints="NO" id="9ZY-kd-E8l">
                                         <rect key="frame" x="32" y="32" width="100" height="100"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-KJ-OzG">
@@ -222,7 +222,7 @@
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FpD-ua-oVT">
                                 <rect key="frame" x="195" y="260" width="164" height="164"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" translatesAutoresizingMaskIntoConstraints="NO" id="ZLb-gf-FUS">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caticon" translatesAutoresizingMaskIntoConstraints="NO" id="ZLb-gf-FUS">
                                         <rect key="frame" x="32" y="32" width="100" height="100"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1Q-M4-Ibc">
@@ -856,7 +856,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vYZ-aE-H0X">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="testCell" id="vYZ-aE-H0X">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vYZ-aE-H0X" id="TEl-4H-6N4">
@@ -873,7 +873,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZK-af-GCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6024" y="633"/>
+            <point key="canvasLocation" x="6106" y="633"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dLN-mQ-VFN">
@@ -914,7 +914,9 @@
     </scenes>
     <resources>
         <image name="caticon" width="512" height="512"/>
+        <image name="game" width="192" height="192"/>
         <image name="gear" width="512" height="512"/>
         <image name="logo" width="139" height="99"/>
+        <image name="pc" width="256" height="256"/>
     </resources>
 </document>

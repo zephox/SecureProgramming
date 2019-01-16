@@ -61,6 +61,7 @@
 		F96A8C7B21AFE63D00146A29 /* GPUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C7A21AFE63D00146A29 /* GPUController.swift */; };
 		F96A8C7D21AFEC2100146A29 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A8C7C21AFEC2100146A29 /* registerViewController.swift */; };
 		F9B4DAC021B071B000466FBE /* gpumodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4DABF21B071B000466FBE /* gpumodel.swift */; };
+		F9B7FA3821EF46FC003D932A /* gamemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7FA3721EF46FC003D932A /* gamemodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		F96A8C8121AFEF0C00146A29 /* Museo300-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo300-Regular.otf"; sourceTree = "<group>"; };
 		F9808B2A0ABFD78E9CD39157 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B4DABF21B071B000466FBE /* gpumodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpumodel.swift; sourceTree = "<group>"; };
+		F9B7FA3721EF46FC003D932A /* gamemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamemodel.swift; sourceTree = "<group>"; };
 		FD93F97A03EDF4FA1FE516AF /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +293,7 @@
 				F968317721EBAB5800F5DC6D /* psumodel.swift */,
 				F968317B21EBAF0200F5DC6D /* buildmodel.swift */,
 				F968319121EBFC9500F5DC6D /* casemodel.swift */,
+				F9B7FA3721EF46FC003D932A /* gamemodel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				F96A8C7D21AFEC2100146A29 /* registerViewController.swift in Sources */,
 				F96A8C4921AFE47700146A29 /* AppDelegate.swift in Sources */,
 				F958C6BB21C3FC1700A2B85E /* CaseController.swift in Sources */,
+				F9B7FA3821EF46FC003D932A /* gamemodel.swift in Sources */,
 				F958C6B921C3F62300A2B85E /* cpumodel.swift in Sources */,
 				F924237221B309D90005B379 /* menuViewController.swift in Sources */,
 			);
