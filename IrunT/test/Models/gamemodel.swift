@@ -8,9 +8,9 @@
 
 import Foundation
 
-typealias Game = [GameElement]
+typealias Games = [Game]
 
-struct GameElement: Codable, Hashable {
+struct Game: Codable, Hashable {
     let gID: String
     let gTitle: String
     
