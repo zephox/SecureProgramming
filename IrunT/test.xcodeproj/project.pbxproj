@@ -10,6 +10,8 @@
 		340DAC49EE348F3089A98DC9 /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CA9D6E17AF1AEDCF11C093 /* Pods_testTests.framework */; };
 		34C1F59EBC6414CF6E6890C4 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9808B2A0ABFD78E9CD39157 /* Pods_test.framework */; };
 		4C11B54D21EF45100084C425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C11B54C21EF45100084C425 /* GoogleService-Info.plist */; };
+		4C11B54F21EF46B90084C425 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11B54E21EF46B90084C425 /* LoginNavigationController.swift */; };
+		4C11B55121EF47100084C425 /* LoggedInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11B55021EF47100084C425 /* LoggedInNavigationController.swift */; };
 		634902FE494759AC90FA64AF /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B568B987A75AE6426058D0B /* Pods_testUITests.framework */; };
 		F910E7D821CA44240071C648 /* memoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910E7D721CA44240071C648 /* memoryModel.swift */; };
 		F924237221B309D90005B379 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F924237121B309D90005B379 /* menuViewController.swift */; };
@@ -88,6 +90,8 @@
 		2B568B987A75AE6426058D0B /* Pods_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEB81680C4BDC8BDB2A7046 /* Pods-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C11B54C21EF45100084C425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C11B54E21EF46B90084C425 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		4C11B55021EF47100084C425 /* LoggedInNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInNavigationController.swift; sourceTree = "<group>"; };
 		80F1C1B06322310F4535BE4D /* Pods-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF12F297B57E34556F213B4A /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
 		F910E7D721CA44240071C648 /* memoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoryModel.swift; sourceTree = "<group>"; };
@@ -269,6 +273,8 @@
 				F958C6BA21C3FC1700A2B85E /* CaseController.swift */,
 				F968318921EBEA9F00F5DC6D /* BuildViewController.swift */,
 				F968318D21EBF8DE00F5DC6D /* CPUController.swift */,
+				4C11B54E21EF46B90084C425 /* LoginNavigationController.swift */,
+				4C11B55021EF47100084C425 /* LoggedInNavigationController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -541,6 +547,7 @@
 				F937783D21BAAA9E00901202 /* PartViewController.swift in Sources */,
 				F958C6BF21C3FDA500A2B85E /* MemoryController.swift in Sources */,
 				F968319221EBFC9500F5DC6D /* casemodel.swift in Sources */,
+				4C11B54F21EF46B90084C425 /* LoginNavigationController.swift in Sources */,
 				F9B4DAC021B071B000466FBE /* gpumodel.swift in Sources */,
 				F968317C21EBAF0200F5DC6D /* buildmodel.swift in Sources */,
 				F937783F21BAB58F00901202 /* partCell.swift in Sources */,
@@ -554,6 +561,7 @@
 				F968318621EBE29900F5DC6D /* sharedInstance.swift in Sources */,
 				F96A8C7B21AFE63D00146A29 /* GPUController.swift in Sources */,
 				F96A8C4B21AFE47700146A29 /* ViewController.swift in Sources */,
+				4C11B55121EF47100084C425 /* LoggedInNavigationController.swift in Sources */,
 				F96A8C7D21AFEC2100146A29 /* registerViewController.swift in Sources */,
 				F96A8C4921AFE47700146A29 /* AppDelegate.swift in Sources */,
 				F958C6BB21C3FC1700A2B85E /* CaseController.swift in Sources */,

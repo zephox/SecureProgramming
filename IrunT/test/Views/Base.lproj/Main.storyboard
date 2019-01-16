@@ -153,7 +153,7 @@
             </objects>
             <point key="canvasLocation" x="1206" y="-123"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Title-->
         <scene sceneID="45D-BZ-S2D">
             <objects>
                 <viewController id="TOg-aE-mOg" customClass="menuViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
@@ -245,6 +245,16 @@
                                     <constraint firstItem="P1Q-M4-Ibc" firstAttribute="leading" secondItem="FpD-ua-oVT" secondAttribute="leading" constant="8" id="piV-5E-vZQ"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-f2-maJ">
+                                <rect key="frame" x="147" y="533" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Check User">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkCurrentUser:" destination="TOg-aE-mOg" eventType="touchUpInside" id="rM6-Hp-qwl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -267,7 +277,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oko-5D-zDR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SrE-AG-IhA"/>
+                    <navigationItem key="navigationItem" title="Title" id="eTW-IC-frY">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="ZcO-SS-CDL">
+                            <connections>
+                                <action selector="signOutPressed:" destination="TOg-aE-mOg" id="bJg-iU-tot"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="view1" destination="kir-3b-xUU" id="hVh-VB-41L"/>
                         <outlet property="view2" destination="yJ0-QZ-T2K" id="A4P-OS-geu"/>
@@ -276,6 +292,7 @@
                         <outlet property="viewController" destination="LXf-QC-0Cl" id="r4u-aq-dEH"/>
                         <segue destination="rjf-0S-5S0" kind="show" identifier="toSpecs" id="XzK-iZ-i8a"/>
                         <segue destination="dN4-gx-RdS" kind="show" identifier="toBuild" id="KpG-ia-JTQ"/>
+                        <segue destination="dkY-zt-OF1" kind="show" identifier="signOutPressed" id="r7I-Hb-NGX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbI-U6-1wD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -354,6 +371,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.0087351832790000007" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerPressed:" destination="oP3-pt-yoQ" eventType="touchUpInside" id="WVh-Zn-Vpx"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="haT-JK-DGf">
                                 <rect key="frame" x="123.5" y="80" width="128" height="128"/>
@@ -388,6 +408,7 @@
                         <outlet property="passwordCheckField" destination="oK1-Eh-gJQ" id="nO3-D8-X1t"/>
                         <outlet property="passwordField" destination="Nlb-57-mLh" id="Lg6-gA-P8G"/>
                         <outlet property="registerView" destination="eD7-eI-Eoz" id="DiA-x9-zlK"/>
+                        <segue destination="7oU-Pd-Bnx" kind="presentation" identifier="registerPressed" id="KjR-qE-mIG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlN-jo-59b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -403,7 +424,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTv-sI-3h7">
-                                <rect key="frame" x="16" y="72" width="40" height="21"/>
+                                <rect key="frame" x="16" y="72" width="41" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5V4-FA-2iM"/>
                                 </constraints>
@@ -875,10 +896,10 @@
             </objects>
             <point key="canvasLocation" x="6024" y="633"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Navigation Controller-->
         <scene sceneID="dLN-mQ-VFN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dkY-zt-OF1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dkY-zt-OF1" customClass="LoginNavigationController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gue-15-xZP">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -893,10 +914,10 @@
             </objects>
             <point key="canvasLocation" x="156" y="-122.78860569715144"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Logged In Navigation Controller-->
         <scene sceneID="2cm-Sx-nky">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7oU-Pd-Bnx" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoggedInNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7oU-Pd-Bnx" customClass="LoggedInNavigationController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mGB-ja-ACC">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -917,4 +938,7 @@
         <image name="gear" width="512" height="512"/>
         <image name="logo" width="139" height="99"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ot4-Oz-y8h"/>
+    </inferredMetricsTieBreakers>
 </document>

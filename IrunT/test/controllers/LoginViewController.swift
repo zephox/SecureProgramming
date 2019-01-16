@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
@@ -17,6 +18,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var guestButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var loginButton: UIButton!
+    var currentUser: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,8 @@ class LoginViewController: UIViewController {
         passwordField.setBorderBottom(false)
         usernameField.setBorderBottom(false)
         viewController.backgroundColor = UIColor(patternImage: UIImage(named: "BackgroundD")!)
+        currentUser = Auth.auth().currentUser
+        
     }
     
     @IBAction func editingBegin(_ sender: UITextField) {
@@ -41,7 +45,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func editingEnd(_ sender: UITextField) {
-    sender.setBorderBottom(false)
+        sender.setBorderBottom(false)
     }
     
     @IBAction func registerPressed(_ sender: UIButton) {
@@ -49,15 +53,55 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func guestLoginPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "loginPressed", sender: self)
+        Auth.auth().signInAnonymously() { (authResult, error) in
+            self.performSegue(withIdentifier: "loginPressed", sender: self)
+        }
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "loginPressed", sender: self)
+//        performSegue(withIdentifier: "loginPressed", sender: self)
+        
+        let emailInput = usernameField.text
+        let passwordInput = passwordField.text
+        
+        if self.currentUser == nil {
+            if ((emailInput?.isEmpty)!) || ((passwordInput?.isEmpty)!) {
+                alert(title: "Zonk", message: "Please fill in all the fields", option: "Try Again")
+            } else {
+                loginUser(email: emailInput!, password: passwordInput!)
+            }
+        } else {
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+                alert(title: "Zonk", message: "You were somehow logged in so we logged you out", option: "Log In Again")
+            } catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+            }
+        }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "loginPressed"{
+    func loginUser(email: String, password: String) {
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            self.currentUser = user?.user
+
+            if self.currentUser != nil {
+                self.performSegue(withIdentifier: "loginPressed", sender: self)
+            } else {
+                self.alert(title: "Zonk", message: "Email or Password incorrect", option: "Try Again")
+            }
         }
+        
+    }
+    
+    func alert(title: String, message: String, option: String) {
+        let alert = UIAlertController(title:  title, message:  message , preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: option, style: .default, handler: nil)
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class menuViewController: UIViewController {
     @IBOutlet weak var view1: UIView!
@@ -37,6 +38,18 @@ class menuViewController: UIViewController {
      performSegue(withIdentifier: "toBuild", sender: self)
     }
     
+    @IBAction func signOutPressed(_ sender: UIBarButtonItem) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            self.performSegue(withIdentifier: "signOutPressed", sender: self)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
+    @IBAction func checkCurrentUser(_ sender: UIButton) {
+        debugPrint (Auth.auth().currentUser!)
+    }
 }
 extension UIView{
     func setCorner(_ value:CGFloat){
