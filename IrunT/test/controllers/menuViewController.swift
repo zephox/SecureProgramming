@@ -31,6 +31,9 @@ class menuViewController: UIViewController {
         self.view4.setCorner(6)
         self.view4.setShadow()
     }
+    @IBAction func toGamelist(_ sender: UIButton) {
+        performSegue(withIdentifier: "toGamelist", sender: self)
+    }
     @IBAction func test(_ sender: UIButton) {
         performSegue(withIdentifier: "toSpecs", sender: self)
     }

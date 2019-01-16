@@ -18,6 +18,10 @@ extension URL{
     static let GPU = "https://zephox.nl/gpu.json"
     static let Memory = "https://zephox.nl/memory.json"
     static let Case = "https://zephox.nl/case.json"
+    static let Motherboard = "https://zephox.nl/motherboard.json"
+    static let Storage = "https://zephox.nl/storage.json"
+    static let CpuCooler = "https://zephox.nl/cooler.json"
+    static let GameList = "https://www.game-debate.com/game/api/list"
 }
 
 

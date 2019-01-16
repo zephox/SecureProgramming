@@ -9,7 +9,7 @@
 import Foundation
 
 class sharedInstance{
-    
+    //singleton
     static let shared = sharedInstance()
     var localBuild: build?
     var gpu : GPU?
@@ -18,7 +18,7 @@ class sharedInstance{
     var psu : PSU?
     var kast : Case?
     
-    
+    //TODO: save whole as struct
     func saveBuild() {
         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.ram), forKey:"memory")
         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.gpu), forKey:"gpu")
@@ -26,7 +26,7 @@ class sharedInstance{
         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.psu), forKey:"psu")
          UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.kast), forKey:"case")
     }
-    
+    //TODO: load whole as struct
     func loadBuild(){
         if let data = UserDefaults.standard.value(forKey:"memory") as? Data {
             sharedInstance.shared.ram = try? PropertyListDecoder().decode(Memory.self, from: data)

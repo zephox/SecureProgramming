@@ -29,7 +29,7 @@ class GPUController: UITableViewController {
     }
     
     func showSimpleAlert(_ item: GPU) {
-        let alert = UIAlertController(title: item.name, message:item.series + " " + item.name + " " + item.price ,preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: item.toTitle(), message:item.series + " " + item.name + " " + item.price ,preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
         }))
@@ -52,7 +52,7 @@ class GPUController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "testCell", for: indexPath) as! tvc
-        cell.textLabel?.text = cleanedArray[indexPath.row].name.split(separator: " ")[0] + " " + cleanedArray[indexPath.row].series + " " + cleanedArray[indexPath.row].chipset
+        cell.textLabel?.text = cleanedArray[indexPath.row].toTitle()
         cell.detailTextLabel?.text = cleanedArray[indexPath.row].price
         return cell
     }

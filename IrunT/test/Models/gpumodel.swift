@@ -31,4 +31,12 @@ struct GPU: Codable {
         case chipset = "chipset"
         case id = "id"
     }
+    
+    func toTitle() -> String {
+        return name.split(separator: " ")[0] + " " + series + " " + chipset
+    }
+    
+    func toDesc() -> String {
+        return ""
+    }
 }
