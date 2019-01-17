@@ -18,6 +18,12 @@ class sharedInstance{
     var psu : PSU?
     var kast : Case?
     
+    func toBuildString() -> String{
+        return "cpu: " + cpu!.name + " " +
+            "gpu: " + gpu!.name + " " +
+            "ram: " + ram!.size + " "
+    }
+    
     //TODO: save whole as struct
     func saveBuild() {
         UserDefaults.standard.set(try? PropertyListEncoder().encode(sharedInstance.shared.ram), forKey:"memory")

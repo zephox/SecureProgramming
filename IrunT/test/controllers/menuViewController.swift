@@ -50,9 +50,6 @@ class menuViewController: UIViewController {
             print ("Error signing out: %@", signOutError)
         }
     }
-    @IBAction func checkCurrentUser(_ sender: UIButton) {
-        debugPrint (Auth.auth().currentUser!)
-    }
 }
 extension UIView{
     func setCorner(_ value:CGFloat){

@@ -79,8 +79,18 @@ class GameViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func getRequirements(_ gameID : String){
         Alamofire.request(URL.GameStats + gameID).responseObject { (response: DataResponse<minreq>) in
             if let resp = response.value{
-               print(resp)
+                self.alert(title: "", message:"Your build: " + sharedInstance.shared.toBuildString() + ", required = " + resp.cpuIntel + ", " + resp.gpuNvidia + ", " + resp.memory, option:"Aight" )
             }
         }
+    }
+    
+    func alert(title: String, message: String, option: String) {
+        let alert = UIAlertController(title:  title, message:  message , preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: option, style: .default, handler: nil)
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
     }
 }
