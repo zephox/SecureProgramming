@@ -56,8 +56,14 @@ class registerViewController: UIViewController {
             if ((emailInput?.isEmpty)!) || ((passwordInput?.isEmpty)!) || ((passwordCheckInput?.isEmpty)!){
                 alert(title: "Zonk", message: "Please fill in all the fields", option: "Try Again")
             } else {
-                registerUser(email: emailInput!, password: passwordInput!, checkPassword: passwordCheckInput!)
-                self.performSegue(withIdentifier: "registerPressed", sender: self)
+                if (passwordInput?.count)! < 6 {
+                    alert(title: "Zonk", message: "Password needs to be at least 6 characters", option: "Try Again")
+                }
+                else{
+                    registerUser(email: emailInput!, password: passwordInput!, checkPassword: passwordCheckInput!)
+                    self.performSegue(withIdentifier: "registerPressed", sender: self)
+                }
+               
             }
         } else {
             alert(title: "Logged In", message: "Something went wrong, you should not be here, please restart the app", option: "OK")
@@ -67,8 +73,9 @@ class registerViewController: UIViewController {
     func registerUser(email: String, password: String, checkPassword: String) {
         if password == checkPassword {
             Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-                // ...
-                //                guard let user = authResult?.user else {return}
+                print(error)
+                print(authResult)
+                    guard let user = authResult?.user else {return}
             }
         } else {
             alert(title: "Zonk", message: "Passwords do not match!", option: "Try Again")

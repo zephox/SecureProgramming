@@ -67,4 +67,20 @@ class GameViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if searchArray.count > 0 {
+            getRequirements(searchArray[indexPath.row].gID)
+        }
+        else{
+             getRequirements(gameArray[indexPath.row].gID)
+        }
+    }
+    
+    func getRequirements(_ gameID : String){
+        Alamofire.request(URL.GameStats + gameID).responseObject { (response: DataResponse<minreq>) in
+            if let resp = response.value{
+               print(resp)
+            }
+        }
+    }
 }

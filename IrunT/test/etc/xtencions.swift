@@ -22,6 +22,7 @@ extension URL{
     static let Storage = "https://zephox.nl/storage.json"
     static let CpuCooler = "https://zephox.nl/cooler.json"
     static let GameList = "https://www.game-debate.com/game/api/list"
+    static let GameStats = "https://zephox.nl/getGame.php?gameId="
 }
 
 
