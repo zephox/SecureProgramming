@@ -27,6 +27,7 @@ class MemoryController: UITableViewController {
             }
         }
     }
+    
     func showSimpleAlert(_ item: Memory) {
         let alert = UIAlertController(title: item.name, message:item.size + " " + item.speed,preferredStyle: UIAlertController.Style.alert)
         

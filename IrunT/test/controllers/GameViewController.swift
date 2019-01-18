@@ -17,6 +17,7 @@ class GameViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var searchbutton: UIButton!
     @IBOutlet weak var searchbar: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.delegate = self

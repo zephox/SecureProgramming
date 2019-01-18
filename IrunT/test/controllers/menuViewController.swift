@@ -21,6 +21,7 @@ class menuViewController: UIViewController {
         viewController.backgroundColor = UIColor(patternImage: UIImage(named: "BackgroundD")!)
         setUpViews()
     }
+    
     func setUpViews(){
         self.view1.setCorner(6)
         self.view1.setShadow()
@@ -31,12 +32,15 @@ class menuViewController: UIViewController {
         self.view4.setCorner(6)
         self.view4.setShadow()
     }
+    
     @IBAction func toGamelist(_ sender: UIButton) {
         performSegue(withIdentifier: "toGamelist", sender: self)
     }
+    
     @IBAction func test(_ sender: UIButton) {
         performSegue(withIdentifier: "toSpecs", sender: self)
     }
+    
     @IBAction func toBuild(_ sender: UIButton) {
      performSegue(withIdentifier: "toBuild", sender: self)
     }
@@ -51,6 +55,7 @@ class menuViewController: UIViewController {
         }
     }
 }
+
 extension UIView{
     func setCorner(_ value:CGFloat){
         self.layer.cornerRadius = self.frame.size.width / 2
@@ -58,6 +63,7 @@ extension UIView{
         self.layer.masksToBounds = false
         self.layer.cornerRadius = value
     }
+    
     func setShadow(){
         self.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
         self.layer.shadowRadius = 5;

@@ -85,7 +85,7 @@ class LoginViewController: UIViewController {
         
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             self.currentUser = user?.user
-            print(error)
+            //print(error)
 
             if self.currentUser != nil {
                 self.performSegue(withIdentifier: "loginPressed", sender: self)
