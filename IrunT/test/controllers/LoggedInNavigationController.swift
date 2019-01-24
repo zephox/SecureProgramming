@@ -14,10 +14,9 @@ class LoggedInNavigationController : UINavigationController {
     override func viewDidAppear(_ animated: Bool) {
         let currentUser = Auth.auth().currentUser
         if currentUser == nil {
-            //            loadLoginScreen()
+            loadLoginScreen()
         } else {
             debugPrint(currentUser as Any)
-            
         }
     }
     
