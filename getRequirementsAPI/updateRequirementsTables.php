@@ -45,11 +45,17 @@ function getKnownRequirements(){
 }
 
 function updateDB($game_id){
-    if(ctype_digit($game_id)){
+    // use FILTER_VALIDATE_INT to validate the integer given.
+    $min = 0;
+    $max = 99999999;
+    $int_validated = filter_var($game_id, FILTER_VALIDATE_INT, array("options" => array("min_range"=>$min, "max_range"=>$max)));
+    // check if ctype digit and validated.
+    if(ctype_digit($game_id) && $int_validated){
         $g_id = $game_id;
     }
     else{
-        echo "failed";
+        echo "Invalid game id parameter given, parameter must be an integer. </br>";
+        echo "Parameter given: " . $game_id . " does not meet the requirements. </br>";
         exit;
     }
     // build url
@@ -96,7 +102,7 @@ function insertRequirements($array, $table){
         echo "New " . $table . " record created successfully";
         echo "</br>";
     } else {
-        echo "Error: " . $sql . "</br>" . mysqli_error($conn);
+        echo "Error: " . $sql . "</br>" . mysqli_error($conn) . " -> In table: " . $table;
         echo "</br>";
     }
 }
